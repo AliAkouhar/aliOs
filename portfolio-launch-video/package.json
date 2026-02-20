@@ -1,0 +1,32 @@
+{
+  "name": "portfolio-launch-video",
+  "version": "1.0.0",
+  "description": "Remotion product launch video for Ali Akouhar's portfolio",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "build": "remotion render src/index.ts PortfolioLaunch out/portfolio-launch.mp4",
+    "build:gif": "remotion render src/index.ts PortfolioLaunch out/portfolio-launch.gif --codec=gif",
+    "thumbnail": "remotion still src/index.ts PortfolioLaunch 0 out/thumbnail.png",
+    "upgrade": "remotion upgrade"
+  },
+  "keywords": [
+    "remotion",
+    "video",
+    "portfolio"
+  ],
+  "author": "Ali Akouhar",
+  "license": "MIT",
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/google-fonts": "4.0.419",
+    "@remotion/player": "^4.0.0",
+    "@remotion/transitions": "4.0.419",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remotion": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
