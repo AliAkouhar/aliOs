@@ -80,6 +80,7 @@ export function executeCommand(input: string): void {
                 { type: 'output', content: '  4. philosophers    - Multithreading Simulation' },
                 { type: 'output', content: '  5. ft_transcendence - Full-Stack Ping Pong SPA' },
                 { type: 'output', content: '  6. irc             - Internet Relay Chat Server' },
+                { type: 'output', content: '  7. fractol         - Fractal Explorer' },
                 { type: 'output', content: '' },
                 { type: 'output', content: "Usage: run [project_name]" },
                 { type: 'output', content: '' },
@@ -97,7 +98,7 @@ export function executeCommand(input: string): void {
             const project = PROJECTS[projectName as keyof typeof PROJECTS];
             if (!project) {
                 terminalStore.addEntry('error', `Error: Project '${projectName}' not found`);
-                terminalStore.addEntry('output', 'Available: cub3d, minishell, inception, philosophers, ft_transcendence, irc');
+                terminalStore.addEntry('output', 'Available: cub3d, minishell, inception, philosophers, ft_transcendence, irc, fractol');
                 break;
             }
 

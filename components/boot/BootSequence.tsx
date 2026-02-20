@@ -197,7 +197,7 @@ export default function BootSequence({ onComplete }: BootSequenceProps) {
                         animate={{ opacity: 0.6 }}
                         transition={{ delay: 1 }}
                     >
-                        Press any key to skip
+                        Press space to skip
                     </motion.div>
                 </motion.div>
             )}
